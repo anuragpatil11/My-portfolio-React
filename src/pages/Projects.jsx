@@ -9,12 +9,18 @@ import currencyAppImg from "../assets/images/currency-app.png"
 const Projects = () => {
   const frontendProjects = [
     {
-      title: "Weather App",
-      description:
-        "A JavaScript-based weather app that fetches real-time weather data.",
-      image: weatherImg,
-      github: "https://github.com/anuragpatil11/Javascript-Project-Weather-App",
-      live: "https://anuragpatil11.github.io/Javascript-Project-Weather-App/",
+      title: "Portfolio Website",
+      description: "A personal portfolio website built with React.",
+      image: portfolioImg,
+      github: "https://github.com/anuragpatil11/My-portfolio-React",
+      live: "https://anurag11-portfolio.netlify.app/",
+    },
+    {
+      title: "Currency Converter",
+      description: "A responsive application which convert currency .",
+      image: currencyAppImg,
+      github: "https://github.com/anuragpatil11/Javascript-Project-Text-Speech-Converter",
+      live: "https://anuragpatil11.github.io/Javascript-Project-Text-Speech-Converter/",
     },
     {
       title: "Keeper App",
@@ -24,18 +30,19 @@ const Projects = () => {
       live: "https://anuragpatil11.github.io/ToDo-App/",
     },
     {
+      title: "Weather App",
+      description:
+        "A JavaScript-based weather app that fetches real-time weather data.",
+      image: weatherImg,
+      github: "https://github.com/anuragpatil11/Javascript-Project-Weather-App",
+      live: "https://anuragpatil11.github.io/Javascript-Project-Weather-App/",
+    },
+    {
       title: "Quote Generator",
       description: "A responsive application which randomly generate Quote and also post it on twitter .",
       image: quoteImg,
       github: "https://github.com/anuragpatil11/Javascript-Quote-Generator",
       live: "https://anuragpatil11.github.io/Javascript-Quote-Generator/",
-    },
-    {
-      title: "Portfolio Website",
-      description: "A personal portfolio website built with React.",
-      image: portfolioImg,
-      github: "https://github.com/anuragpatil11/Portfolio",
-      live: "https://anuragpatil11.github.io/Portfolio/",
     },
     {
       title: "Text-Speech Converter",
@@ -44,13 +51,7 @@ const Projects = () => {
       github: "https://github.com/anuragpatil11/Javascript-Project-Text-Speech-Converter",
       live: "https://anuragpatil11.github.io/Javascript-Project-Text-Speech-Converter/",
     },
-    {
-      title: "Currency Converter",
-      description: "A responsive application which convert currency .",
-      image: currencyAppImg,
-      github: "https://github.com/anuragpatil11/Javascript-Project-Text-Speech-Converter",
-      live: "https://anuragpatil11.github.io/Javascript-Project-Text-Speech-Converter/",
-    },
+    
     // {
     //   title: "Blog App",
     //   description: "A blog app for creating and managing posts.",
@@ -68,48 +69,48 @@ const Projects = () => {
   ];
 
   const backendProjects = [
-    {
-      title: "User Authentication API",
-      description: "A Node.js API for user authentication with JWT.",
-      image: "https://source.unsplash.com/random/300x300/?authentication",
-      github: "https://github.com/anuragpatil11/Auth-API",
-      live: "",
-    },
-    {
-      title: "E-commerce Backend",
-      description: "A Node.js backend for managing an e-commerce platform.",
-      image: "https://source.unsplash.com/random/300x300/?backend",
-      github: "https://github.com/anuragpatil11/Ecommerce-Backend",
-      live: "",
-    },
-    {
-      title: "Blog API",
-      description: "A RESTful API for creating and managing blog posts.",
-      image: "https://source.unsplash.com/random/300x300/?api",
-      github: "https://github.com/anuragpatil11/Blog-API",
-      live: "",
-    },
-    {
-      title: "Chat Application",
-      description: "A real-time chat backend using Node.js and Socket.IO.",
-      image: "https://source.unsplash.com/random/300x300/?chat",
-      github: "https://github.com/anuragpatil11/Chat-App",
-      live: "",
-    },
-    {
-      title: "Task Manager API",
-      description: "An API for managing tasks with MongoDB.",
-      image: "https://source.unsplash.com/random/300x300/?tasks",
-      github: "https://github.com/anuragpatil11/Task-Manager-API",
-      live: "",
-    },
-    {
-      title: "File Upload Service",
-      description: "A service for uploading and managing files.",
-      image: "https://source.unsplash.com/random/300x300/?files",
-      github: "https://github.com/anuragpatil11/File-Upload-Service",
-      live: "",
-    },
+    // {
+    //   title: "User Authentication API",
+    //   description: "A Node.js API for user authentication with JWT.",
+    //   image: "https://source.unsplash.com/random/300x300/?authentication",
+    //   github: "https://github.com/anuragpatil11/Auth-API",
+    //   live: "",
+    // },
+    // {
+    //   title: "E-commerce Backend",
+    //   description: "A Node.js backend for managing an e-commerce platform.",
+    //   image: "https://source.unsplash.com/random/300x300/?backend",
+    //   github: "https://github.com/anuragpatil11/Ecommerce-Backend",
+    //   live: "",
+    // },
+    // {
+    //   title: "Blog API",
+    //   description: "A RESTful API for creating and managing blog posts.",
+    //   image: "https://source.unsplash.com/random/300x300/?api",
+    //   github: "https://github.com/anuragpatil11/Blog-API",
+    //   live: "",
+    // },
+    // {
+    //   title: "Chat Application",
+    //   description: "A real-time chat backend using Node.js and Socket.IO.",
+    //   image: "https://source.unsplash.com/random/300x300/?chat",
+    //   github: "https://github.com/anuragpatil11/Chat-App",
+    //   live: "",
+    // },
+    // {
+    //   title: "Task Manager API",
+    //   description: "An API for managing tasks with MongoDB.",
+    //   image: "https://source.unsplash.com/random/300x300/?tasks",
+    //   github: "https://github.com/anuragpatil11/Task-Manager-API",
+    //   live: "",
+    // },
+    // {
+    //   title: "File Upload Service",
+    //   description: "A service for uploading and managing files.",
+    //   image: "https://source.unsplash.com/random/300x300/?files",
+    //   github: "https://github.com/anuragpatil11/File-Upload-Service",
+    //   live: "",
+    // },
   ];
 
   const renderProjects = (projects) =>

@@ -8,8 +8,16 @@ import {
   FaNodeJs,
   FaJava,
   FaPython,
+  FaHackerrank,
 } from "react-icons/fa6";
-import { SiExpress, SiMongodb, SiMysql, SiPostgresql } from "react-icons/si";
+import {
+  SiExpress,
+  SiMongodb,
+  SiMysql,
+  SiPostgresql,
+  SiLeetcode,
+  SiGeeksforgeeks,
+} from "react-icons/si";
 import { TbBrandCpp } from "react-icons/tb";
 const About = () => {
   return (
@@ -37,8 +45,8 @@ const About = () => {
 
           {/* Profile Info */}
           <div>
-            <h2 className="text-4xl font-semibold mb-4">
-              Hi, I'm Anurag Patil
+            <h2 className="text-4xl font-semibold mb-4 ">
+              Hi, I'm <span className="text-purple-500">Anurag Patil</span>
             </h2>
             <p className="text-lg leading-relaxed mb-6">
               I'm an Information Technology student at I2IT College Pune with
@@ -100,6 +108,9 @@ const About = () => {
                 description:
                   "Solving coding problems efficiently and effectively.",
                 color: "bg-yellow-500",
+                codingPlatformIcon1: <SiLeetcode />,
+                codingPlatformIcon2: <SiGeeksforgeeks />,
+                codingPlatformIcon3: <FaHackerrank />,
                 icon: (
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
                     <path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z" />
@@ -114,10 +125,31 @@ const About = () => {
                 <div className="flex items-center mb-4 h-6 w-6">
                   {item.icon}
                 </div>
-                <h3 className="text-2xl font-semibold  mb-2">
-                  {item.title}
-                </h3>
-                <p >{item.description}</p>
+                <h3 className="text-2xl font-semibold  mb-2">{item.title}</h3>
+                <p>{item.description}</p>
+                <div className="flex gap-2 text-2xl mt-3 mb-4 h-6 w-6">
+                  <a
+                    className="hover:text-purple-500"
+                    href="https://leetcode.com/u/anuragP11/"
+                    target="_blank"
+                  >
+                    {item.codingPlatformIcon1}
+                  </a>
+                  <a
+                    className="hover:text-purple-500"
+                    href="https://www.geeksforgeeks.org/user/anuragpatil_11/"
+                    target="_blank"
+                  >
+                    {item.codingPlatformIcon2}
+                  </a>
+                  <a
+                    className="hover:text-purple-500"
+                    href="https://www.hackerrank.com/profile/anuragpatil_1181"
+                    target="_blank"
+                  >
+                    {item.codingPlatformIcon3}
+                  </a>
+                </div>
               </div>
             ))}
           </div>
@@ -131,22 +163,19 @@ const About = () => {
           <div className="space-y-4">
             {[
               { skill: "C++", percentage: 70, icon: <TbBrandCpp /> },
-              { skill: "Java", percentage: 65, icon: <FaJava /> },
+              { skill: "Java", percentage: 60, icon: <FaJava /> },
               { skill: "Python", percentage: 50, icon: <FaPython /> },
               { skill: "HTML", percentage: 90, icon: <FaHtml5 /> },
               { skill: "CSS", percentage: 85, icon: <FaCss3Alt /> },
-              { skill: "JavaScript", percentage: 80, icon: <FaJs /> },
+              { skill: "JavaScript", percentage: 70, icon: <FaJs /> },
               { skill: "React", percentage: 75, icon: <FaReact /> },
-              { skill: "Node", percentage: 70, icon: <FaNodeJs /> },
-              { skill: "Express", percentage: 70, icon: <SiExpress /> },
-              { skill: "MongoDB", percentage: 65, icon: <SiMongodb /> },
-              { skill: "SQL", percentage: 80, icon: <SiMysql /> },
-              { skill: "PostgreSQL", percentage: 60, icon: <SiPostgresql /> },
+              { skill: "Node", percentage: 40, icon: <FaNodeJs /> },
+              { skill: "Express", percentage: 40, icon: <SiExpress /> },
+              { skill: "MongoDB", percentage: 40, icon: <SiMongodb /> },
+              { skill: "SQL", percentage: 70, icon: <SiMysql /> },
+              { skill: "PostgreSQL", percentage: 20, icon: <SiPostgresql /> },
             ].map((item, idx) => (
               <div key={idx} className="space-y-1">
-                {/* <span>{item.icon}</span>
-
-<span className="font-medium text-xl">{item.skill}</span> */}
                 <div className="w-full bg-gray-300 rounded-full h-10 text-xl">
                   <div
                     className="bg-blue-500 h-10 rounded-full"
