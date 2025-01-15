@@ -6,7 +6,7 @@ const Resume = () => {
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
         {/* Header Section */}
         <header className="text-center mb-12">
-          <h1 className="text-5xl font-bold mb-4">Resume</h1>
+          <h1 className="text-5xl font-bold mb-4 hover:text-purple-500">Resume</h1>
           <p className="text-lg">
             A brief overview of my educational background, skills, and
             objectives.

@@ -24,7 +24,7 @@ const About = () => {
     <div className="py-10  bg-white text-[#1D1616] dark:bg-[#1D1616] dark:text-white">
       {/* Hero Section */}
       <section className="py-12 text-center">
-        <h1 className="text-5xl font-bold mb-8">About Me</h1>
+        <h1 className="text-5xl font-bold mb-8 hover:text-purple-500">About Me</h1>
         <p className="text-lg max-w-3xl mx-auto">
           Get to know me better! Here’s a bit about my background, skills, and
           interests.
@@ -173,12 +173,12 @@ const About = () => {
               { skill: "Express", percentage: 40, icon: <SiExpress /> },
               { skill: "MongoDB", percentage: 40, icon: <SiMongodb /> },
               { skill: "SQL", percentage: 70, icon: <SiMysql /> },
-              { skill: "PostgreSQL", percentage: 20, icon: <SiPostgresql /> },
+              { skill: "PostgreSQL", percentage: 30, icon: <SiPostgresql /> },
             ].map((item, idx) => (
               <div key={idx} className="space-y-1">
                 <div className="w-full bg-gray-300 rounded-full h-10 text-xl">
                   <div
-                    className="bg-blue-500 h-10 rounded-full"
+                    className="bg-purple-500 h-10 rounded-full"
                     style={{ width: `${item.percentage}%` }}
                   >
                     <div className="flex justify-start items-center">

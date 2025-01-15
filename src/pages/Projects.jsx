@@ -1,10 +1,10 @@
 import React from "react";
-import weatherImg from "../assets/images/weather-app.png"
-import quoteImg from "../assets/images/quote-generator.png"
-import portfolioImg from "../assets/images/portfolio.png"
-import textToSpeechImg from "../assets/images/text-speech.png"
-import keeperImg from "../assets/images/keeper-app.png"
-import currencyAppImg from "../assets/images/currency-app.png"
+import weatherImg from "../assets/images/weather-app.png";
+import quoteImg from "../assets/images/quote-generator.png";
+import portfolioImg from "../assets/images/portfolio.png";
+import textToSpeechImg from "../assets/images/text-speech.png";
+import keeperImg from "../assets/images/keeper-app.png";
+import currencyAppImg from "../assets/images/currency-app.png";
 
 const Projects = () => {
   const frontendProjects = [
@@ -19,12 +19,14 @@ const Projects = () => {
       title: "Currency Converter",
       description: "A responsive application which convert currency .",
       image: currencyAppImg,
-      github: "https://github.com/anuragpatil11/Javascript-Project-Text-Speech-Converter",
+      github:
+        "https://github.com/anuragpatil11/Javascript-Project-Text-Speech-Converter",
       live: "https://anuragpatil11.github.io/Javascript-Project-Text-Speech-Converter/",
     },
     {
       title: "Keeper App",
-      description: "A React-based keeper app which create note with title and delete it .",
+      description:
+        "A React-based keeper app which create note with title and delete it .",
       image: keeperImg,
       github: "https://github.com/anuragpatil11/Keeper-App-ReactJs",
       live: "https://anuragpatil11.github.io/ToDo-App/",
@@ -39,7 +41,8 @@ const Projects = () => {
     },
     {
       title: "Quote Generator",
-      description: "A responsive application which randomly generate Quote and also post it on twitter .",
+      description:
+        "A responsive application which randomly generate Quote and also post it on twitter .",
       image: quoteImg,
       github: "https://github.com/anuragpatil11/Javascript-Quote-Generator",
       live: "https://anuragpatil11.github.io/Javascript-Quote-Generator/",
@@ -48,10 +51,11 @@ const Projects = () => {
       title: "Text-Speech Converter",
       description: "A responsive application which convert text to speech .",
       image: textToSpeechImg,
-      github: "https://github.com/anuragpatil11/Javascript-Project-Text-Speech-Converter",
+      github:
+        "https://github.com/anuragpatil11/Javascript-Project-Text-Speech-Converter",
       live: "https://anuragpatil11.github.io/Javascript-Project-Text-Speech-Converter/",
     },
-    
+
     // {
     //   title: "Blog App",
     //   description: "A blog app for creating and managing posts.",
@@ -156,7 +160,7 @@ const Projects = () => {
       <div className="max-w-6xl mx-auto px-6">
         {/* Frontend Projects Section */}
         <section className="mb-16">
-          <h1 className="text-4xl font-bold text-center mb-10  ">
+          <h1 className="text-4xl font-bold text-center mb-10  hover:text-purple-500">
             Frontend Projects
           </h1>
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -166,7 +170,7 @@ const Projects = () => {
 
         {/* Backend Projects Section */}
         <section>
-          <h1 className="text-4xl font-bold text-center mb-10 ">
+          <h1 className="text-4xl font-bold text-center mb-10 hover:text-purple-500">
             Backend Projects
           </h1>
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">

@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <div className="py-10 bg-white text-[#1D1616] dark:bg-[#1D1616] dark:text-white transition-all duration-300">
       <section className="max-w-6xl mx-auto px-6 lg:px-8">
-        <h1 className="text-5xl font-bold text-center mb-12">Get in Touch</h1>
+        <h1 className="text-5xl font-bold text-center mb-12 hover:text-purple-500">Get in Touch</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {/* Contact Info */}
           <div className="space-y-8">
