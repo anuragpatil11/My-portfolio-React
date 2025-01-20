@@ -20,17 +20,10 @@ const Projects = () => {
       description: "A responsive application which convert currency .",
       image: currencyAppImg,
       github:
-        "https://github.com/anuragpatil11/Javascript-Project-Text-Speech-Converter",
-      live: "https://anuragpatil11.github.io/Javascript-Project-Text-Speech-Converter/",
+        "https://github.com/anuragpatil11/Currency-Converter-React.Js",
+      live: "",
     },
-    {
-      title: "Keeper App",
-      description:
-        "A React-based keeper app which create note with title and delete it .",
-      image: keeperImg,
-      github: "https://github.com/anuragpatil11/Keeper-App-ReactJs",
-      live: "https://anuragpatil11.github.io/ToDo-App/",
-    },
+
     {
       title: "Weather App",
       description:
@@ -73,6 +66,14 @@ const Projects = () => {
   ];
 
   const backendProjects = [
+    {
+      title: "Keeper App",
+      description:
+        "A MERN stack based keeper app which create note with title and content. Perform CRUD operations .",
+      image: keeperImg,
+      github: "https://github.com/anuragpatil11/Keeper-App-Notes-App",
+      live: "",
+    },
     // {
     //   title: "User Authentication API",
     //   description: "A Node.js API for user authentication with JWT.",
