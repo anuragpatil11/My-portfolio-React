@@ -5,6 +5,7 @@ import portfolioImg from "../assets/images/portfolio.png";
 import textToSpeechImg from "../assets/images/text-speech.png";
 import keeperImg from "../assets/images/keeper-app.png";
 import currencyAppImg from "../assets/images/currency-app.png";
+import ems from "../assets/images/ems.png";
 
 const Projects = () => {
   const frontendProjects = [
@@ -19,8 +20,7 @@ const Projects = () => {
       title: "Currency Converter",
       description: "A responsive application which convert currency .",
       image: currencyAppImg,
-      github:
-        "https://github.com/anuragpatil11/Currency-Converter-React.Js",
+      github: "https://github.com/anuragpatil11/Currency-Converter-React.Js",
       live: "",
     },
 
@@ -72,6 +72,14 @@ const Projects = () => {
         "A MERN stack based keeper app which create note with title and content. Perform CRUD operations .",
       image: keeperImg,
       github: "https://github.com/anuragpatil11/Keeper-App-Notes-App",
+      live: "",
+    },
+    {
+      title: "Employee Management System",
+      description:
+        "A MERN stack based employee management system in which employee handle its task and admin assign task to employee.",
+      image: ems,
+      github: "https://github.com/anuragpatil11/ems",
       live: "",
     },
     // {
