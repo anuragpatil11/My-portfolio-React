@@ -1,4 +1,3 @@
-import React from "react";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { SiLeetcode, SiHackerrank, SiGeeksforgeeks } from "react-icons/si";
 import { motion } from "framer-motion";
@@ -162,9 +161,8 @@ const Resume = () => {
         {/* Right Side - Projects & Experience */}
         <div>
           <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-purple-500 to-purple-700 bg-clip-text text-transparent">
-            Projects 
+            Projects
           </h2>
-
           {/* Experience */}
           {/* <section className="mb-12">
             <h2 className="text-2xl font-bold mb-4 text-gray-800 dark:text-white">
@@ -212,7 +210,6 @@ const Resume = () => {
               ))}
             </div>
           </section> */}
-
           {/* Projects */}
           <section>
             {/* <h2 className="text-2xl font-bold mb-4 text-gray-800 dark:text-white">
@@ -270,6 +267,94 @@ const Resume = () => {
                         </span>
                       ))}
                     </div>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </section>
+          {/* Certifications */}
+          
+          {/* Certifications */}
+          <section className="mt-12">
+            <h2 className="text-2xl font-bold mb-8 bg-gradient-to-r from-purple-500 to-purple-700 bg-clip-text text-transparent">
+              Certifications
+            </h2>
+            <div className="space-y-6">
+              {[
+                {
+                  title: "Full Stack Development Certificate",
+                  issuer: "Udemy",
+                  year: "2025",
+                  link: "https://drive.google.com/file/d/1yUYENfkYpZnCLqgWo9wS4_QpDv7hesCC/view?usp=sharing",
+                  image:
+                    "https://upload.wikimedia.org/wikipedia/commons/4/4e/Coursera_Logo_2021.svg",
+                },
+                {
+                  title: "Cloud Foundations Certificate",
+                  issuer: "AWS Academy",
+                  year: "2024",
+                  link: "https://drive.google.com/file/d/1MJbPtg8eXCYnl3G3OwgGsYVkszt9Zs88/view?usp=drive_link",
+                  image:
+                    "https://design-style-guide.freecodecamp.org/downloads/fcc_primary_large.jpg",
+                },
+                {
+                  title: "Machine Learning Foundations Certificate",
+                  issuer: "AWS Academy",
+                  year: "2024",
+                  link: "https://drive.google.com/file/d/10NCysHWRKLQszrbEpeGp92TAl8y85-Ci/view?usp=drive_link",
+                  image:
+                    "https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg",
+                },
+                {
+                  title: "AI-ML Virtual Internship Certificate",
+                  issuer: "AWS Academy",
+                  year: "2024",
+                  link: "https://drive.google.com/file/d/1Yct9NOa_yzyQgjQcaBXdSMU2LfL7mKPE/view?usp=sharing",
+                  image:
+                    "https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg",
+                },
+                {
+                  title: "Cybersecurity Bootcamp Certificate",
+                  issuer: "I2IT College",
+                  year: "2023",
+                  link: "https://drive.google.com/file/d/1_cKyfcyrgMga2ZSr2Z_i9hzxc0OBcNy4/view?usp=drive_link",
+                  image:
+                    "https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg",
+                },
+                {
+                  title: "Java Programming Completion Certificate",
+                  issuer: "Great Learning",
+                  year: "2023",
+                  link: "https://drive.google.com/file/d/1bmaYMyE7qTBDKrZfeCdREwP0cbZT4L66/view?usp=drive_link",
+                  image:
+                    "https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg",
+                },
+              ].map((cert, idx) => (
+                <motion.div
+                  key={idx}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: idx * 0.2 }}
+                  viewport={{ once: true }}
+                  className="bg-gray-100 dark:bg-gray-900/50 p-4 border-l-4 border-purple-500 dark:border-purple-400 shadow-lg rounded-md hover:bg-gray-200 dark:hover:bg-gray-800/50 transition-colors flex items-center gap-4"
+                >
+                  {/* <img
+                    src={cert.image}
+                    alt={cert.issuer}
+                    className="w-12 h-12 object-contain rounded-md shadow-sm border border-purple-300 dark:border-purple-600"
+                  /> */}
+                  <div>
+                    <a
+                      href={cert.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-lg font-semibold text-purple-600 dark:text-purple-400 hover:underline"
+                    >
+                      {cert.title}
+                    </a>
+                    <p className="text-sm text-gray-600 dark:text-gray-300">
+                      {cert.issuer} &nbsp;•&nbsp; {cert.year}
+                    </p>
                   </div>
                 </motion.div>
               ))}
